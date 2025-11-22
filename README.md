@@ -1,4 +1,3 @@
-```markdown
 # 🦵 OSTEO VISION - AI-Powered Knee Osteoarthritis Detection
 
 A deep learning-powered Streamlit application for automated detection and severity grading of knee osteoarthritis from X-ray images using the Kellgren-Lawrence (KL) grading system.
@@ -24,15 +23,15 @@ A deep learning-powered Streamlit application for automated detection and severi
 
 ## 🏗️ Project Structure
 
-```
 Osteo-Vision/
-├── app.py                  # Main Streamlit application
-├── requirements.txt        # Python dependencies
+├── app.py # Main Streamlit application
+├── requirements.txt # Python dependencies
 ├── models/
-│   └── osteo_vision_model.h5  # Downloaded model (auto-downloaded)
+│ └── osteo_vision_model.h5 # Downloaded model (auto-downloaded)
 ├── .gitignore
-└── README.md              # Documentation
-```
+└── README.md # Documentation
+
+text
 
 ## 🚀 Installation
 
@@ -45,39 +44,39 @@ Osteo-Vision/
 ### Setup Instructions
 
 1. **Clone the repository**
-   ```
-   git clone https://github.com/vivekcm143/Osteo-Vision.git
-   cd Osteo-Vision
-   ```
+git clone https://github.com/vivekcm143/Osteo-Vision.git
+cd Osteo-Vision
+
+text
 
 2. **Install dependencies**
-   ```
-   pip install -r requirements.txt
-   ```
+pip install -r requirements.txt
+
+text
 
 3. **Run the application**
-   ```
-   streamlit run app.py
-   ```
+streamlit run app.py
+
+text
 
 The trained model will automatically download from Google Drive on first run (~200-300 MB).
 
 ## 💻 Usage
 
 1. **Launch the app**
-   ```
-   streamlit run app.py
-   ```
+streamlit run app.py
+
+text
 
 2. **Upload X-ray image**
-   - Click "Browse files" in the sidebar
-   - Select a knee X-ray image (PNG, JPG, or JPEG)
+- Click "Browse files" in the sidebar
+- Select a knee X-ray image (PNG, JPG, or JPEG)
 
 3. **View results**
-   - **Prediction**: Shows the predicted KL grade with confidence
-   - **Original Image**: Your uploaded X-ray
-   - **Grad-CAM Heatmap**: Visual explanation of the prediction
-   - **Confidence Chart**: Probability distribution across all grades
+- **Prediction**: Shows the predicted KL grade with confidence
+- **Original Image**: Your uploaded X-ray
+- **Grad-CAM Heatmap**: Visual explanation of the prediction
+- **Confidence Chart**: Probability distribution across all grades
 
 ## 🧠 Model Architecture
 
@@ -88,13 +87,13 @@ The trained model will automatically download from Google Drive on first run (~2
 - **Framework**: TensorFlow/Keras
 
 ### Model Details
-```
 Architecture: ResNet152V2
 Input Shape: (224, 224, 3)
 Total Parameters: ~60M
 Trainable Parameters: Fine-tuned layers
 Classes: 5 (KL-GRADE 0 to KL-GRADE 4)
-```
+
+text
 
 ## 🔬 Grad-CAM Explainability
 
@@ -116,7 +115,6 @@ The model is hosted on Google Drive and will automatically download on first run
 *(Add your model performance after evaluation)*
 
 Example:
-```
 Overall Accuracy: 87%
 Precision: 85%
 Recall: 86%
@@ -128,7 +126,8 @@ KL-1: 84% accuracy
 KL-2: 86% accuracy
 KL-3: 88% accuracy
 KL-4: 90% accuracy
-```
+
+text
 
 ## 🔧 Troubleshooting
 
@@ -221,6 +220,3 @@ For questions, collaboration, or feedback:
 
 ### Grad-CAM Visualization
 ![Grad-CAM](screenshots/gradcam_heatmap.png)
-```
-
-***
